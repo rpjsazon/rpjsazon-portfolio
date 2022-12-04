@@ -127,6 +127,9 @@ To get full screen size when navigating to the sections.
 }
 
 /*  About-me section */
+#about-me {
+  background-color: var(--black_olive);
+}
 
 .flex-column {
   display: flex;
@@ -162,6 +165,11 @@ Transition: https://www.freecodecamp.org/news/css-transition-examples/
   margin-top: 30px;
 }
 
+/* 
+Reference: 
+I user overflow, so, the image will stay inside the box if the transfor hover is
+trigerred: https://www.w3schools.com/csS/css_overflow.asp
+*/
 .gallery {
   border-radius: 15px;
   position: relative;
@@ -232,4 +240,68 @@ Transition: https://www.freecodecamp.org/news/css-transition-examples/
 */
 .gallery:hover .layer {
   height: 100%;
+}
+
+/* My contact section styles here.*/
+#contact {
+  background-color: var(--black_olive);
+}
+
+/* Circle Photo.
+Reference: https://www.webfx.com/blog/web-design/circular-images-css/ */
+.contact-col-left {
+  flex-basis: 35%; 
+}
+
+.contact-col-left img { 
+  width: 100%; 
+  background-color: var(--floral_white);
+  border-radius: 15px; 
+}
+
+.contact-col-right {
+  flex-basis: 60%;
+}
+
+.contact-col-right p {
+  margin-top: 30px;
+}
+
+.contact-col-right p i {
+  color: var(--flame);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: var(--floral_white);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: var(--flame);
+  transform: translateY(-5px);
+}
+
+/* 
+Still under construction, my plan here to build a footer where I can manage a bunch of
+links or maybe a search field area.
+*/
+footer p {
+  text-align: center;
+  color: var(--eerie_black);
+  background-color: var(--pale_silver);
+  padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  
 }
