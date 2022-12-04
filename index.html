@@ -8,18 +8,20 @@
   <title>R.P.J Sazon Porfolio</title>
 </head>
 <body>
+  <!--Home/Header section and position fixed, whenever scroll the navigation on top will stay there.-->
   <header id="home">
     <h1>RPJ | <span>SAZON</span></h1>
     <nav>
       <ul>
         <li><a href="#header-background">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Learn More...</a></li>
       </ul>
     </nav>
   </header>
-
+  <!--Home/Header fit to screen background image-->
   <div id="header-background">
     <div class="header-text fit-view">
       <p>New to Front-End Development<span> | </span></p>
@@ -32,19 +34,98 @@
       </h1>
     </div>
   </div>
-
+  <!--About me section divided in two columns for the image and description-->
   <div id="about-me">
     <div class="container fit-view">
-      <h1>ABOUT ME</h1>
+      <div class="flex-column">
+        <div class="about-me-col-1">
+          <img src=".//images/winner-cd.jpg" alt="winner hands up">
+        </div>
+        <div class="about-me-col-2">
+          <h1>About me</h1>
+          <br>
+          <p>
+            Highly skilled IT Support Administrator with almost 7 years of experience. Maintaining smooth-running 
+            software and system performance through astute troubleshooting and issue resolution. Manages
+            diverse repair and maintenance tasks with precision and care to enhance IT department functionality
+            and optimise overall company productivity.
+          </p>
+          <br>
+          <p>
+            I have a good experience in photography, cinematography, color-grading, video editing,
+            and taking footage using a drone which I do as a hobby. I cover events, taking street photography,
+            hovering beautiful landscapes with my drone, taking portaits people, and many more. I 
+            won an award in Abu Dhabi, United Arabs Emirates as my photo is selected as one of the top 20 
+            photos in Environment category.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="about-me">
+  <div id="gallery">
     <div class="container fit-view">
-      <h2>
-        Contact
-      </h1>
-    </div>
+      <h1>Gallery Photos</h1>
+
+      <div class="gallery-items">
+
+        <div class="gallery">
+          <img src="./images/wfhome.jpg">
+          <div class="layer">
+            <h3>As an IT Administrator</h3>
+            <p>Working flexibly anytime, anywhere, anyhow.</p>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="./images/wfhome.jpg">
+          <div class="layer">
+            <h3>As an IT Administrator</h3>
+            <p>Working flexibly anytime, anywhere, anyhow.</p>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="./images/wfhome.jpg">
+          <div class="layer">
+            <h3>As an IT Administrator</h3>
+            <p>Working flexibly anytime, anywhere, anyhow.</p>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="./images/wfhome.jpg">
+          <div class="layer">
+            <h3>As an IT Administrator</h3>
+            <p>Working flexibly anytime, anywhere, anyhow. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere nesciunt dolore. Laboriosam molestias amet illum quidem sed magni? Quibusdam, voluptatum! Nesciunt, quis autem! Pariatur itaque recusandae impedit saepe aperiam?</p>
+          </div>
+        </div>
+      </div>
+
+      <h1>Gallery Videos</h1>
+      <div class="gallery-items">
+
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/H9EkmGSQk7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/q1oJsB1yzPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/qQvrwauTbh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="gallery">
+          <img src="./images/wfhome.jpg">
+        </div>
+
+
+      </div>
+    </div>    
   </div>
+
+  
 </body>
 </html>

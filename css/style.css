@@ -31,10 +31,14 @@ body {
   color: var(--floral_white);
 }
 
+/* 
+I used z-index = 1 to make sure that my menu is always on top of other elements.
+*/
 header {
   padding-top: 3%;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 header h1 {
@@ -46,7 +50,7 @@ header h1 {
 
 header h1 span {
   color: var(--floral_white);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   padding: 8px 35px 8px 35px;
   
@@ -56,8 +60,9 @@ header nav {
   margin: 0 10%;
   padding: 8px 15px 15px 35px;
   float: right;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
+  
 }
 
 header nav ul {
@@ -123,4 +128,109 @@ To get full screen size when navigating to the sections.
 
 /*  About-me section */
 
+.flex-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.about-me-col-1 {
+  flex-basis: 35%;
+}
+
+.about-me-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-me-col-2 {
+  flex-basis: 60%;
+}
+
+.about-me-col-2 p {
+  font-size: 22px;
+}
+
+/* 
+Reference: 
+Transition: https://www.freecodecamp.org/news/css-transition-examples/
+*/
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 30px;
+}
+
+.gallery {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.gallery iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  background-size: cover;
+  background-position: center;
+  object-fit:cover ;
+}
+
+/* 
+I used another DIV to layer the existing DIV, then put position absolute, so, it will
+be positioned to the ancestor element.
+*/
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), #010506);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* 
+Reference: 
+Transition: https://www.freecodecamp.org/news/css-transition-examples/
+*/
+.gallery:hover img {
+  transform: scale(1.1);
+}
+
+/* 
+Reference: 
+Transition: https://www.freecodecamp.org/news/css-transition-examples/
+*/
+.gallery:hover .layer {
+  height: 100%;
+}
