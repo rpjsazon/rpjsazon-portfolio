@@ -263,24 +263,29 @@ Reference: https://www.webfx.com/blog/web-design/circular-images-css/ */
   flex-basis: 60%;
 }
 
+.contact-col-right h1 {
+  font-size: 50px;
+}
+
 .contact-col-right p {
   margin-top: 30px;
+  font-size: 30px;
 }
 
 .contact-col-right p i {
   color: var(--flame);
   margin-right: 15px;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .social-icons {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .social-icons a {
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
+  font-size: 60px;
+  margin-right: 50px;
   color: var(--floral_white);
   display: inline-block;
   transition: transform 0.5s;
@@ -302,6 +307,136 @@ footer p {
   padding: 5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1328px) {
+  /* nav media @ width 1328px*/
+  .header-text {
+    padding: 80% 10% 20px 10%;
+    font-size: 26px;
+  }
+
+  /* hiding the logo*/
+  header h1 {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  header nav {
+    width: 80%;
+    text-align: center;
+  }
   
+  header nav ul li {
+    margin-right: 30px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  /* about me media @ width 1328px/
+  .about-me-col-2 p {
+   font-size: 12px;
+  }
+  
+  /* galerry media @ width 1328px */
+  .gallery {
+    margin-bottom: 20px;
+  }
+
+  /* My contact section styles here.*/
+
+  .contact-col-right p {
+    margin-top: 15px;
+   font-size: 22px;
+  }
+
+  .contact-col-right h1 {
+   font-size: 40px;
+  }
+
+  .contact-col-right p i {
+   font-size: 30px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    font-size: 35px;
+  }
+}
+/* nav media @ width 830px below*/
+@media only screen and (max-width: 830px) {
+  header nav ul li {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* nav media @ width 600px*/
+  .header-text {
+    padding: 100% 10% 20px 10%;
+    font-size: 16px;
+  }
+
+  /* hiding the logo*/
+  header h1 {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  header nav {
+    margin-top: 0;
+    padding: 8px 15px 15px 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    width: 80%;
+    text-align: center;
+    
+  }
+  
+  header nav ul li {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--floral_white);
+    transition: color 0.5s;
+  }
+
+  /* about me media @ width 600px*/
+  .about-me-col-2 p {
+   font-size: 10px;
+  }
+  
+  /* galerry media @ width 600px*/
+  .gallery {
+    margin-bottom: 10px;
+  }
+
+  /* My contact section styles here.*/
+
+  .contact-col-right p {
+    margin-top: 15px;
+   font-size: 13px;
+  }
+
+  .contact-col-right h1 {
+   font-size: 28px;
+  }
+
+  .contact-col-right p i {
+   font-size: 20px;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+  }
+
+  .social-icons a {
+    font-size: 25px;
+  }
 }
