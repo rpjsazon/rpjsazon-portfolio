@@ -18,13 +18,13 @@
 ## Wireframe
 ### I've used [PenPot App](https://penpot.app/) to visualized my website.
 
-![wireframe](../rpjsazon-portfolio/screenshoots/wireframe-penpot.JPG)
+![wireframe](screenshoots/wireframe-penpot.JPG)
 
 
 ## GitHub
 ### I used Git to push my main branch to GitHub.
 
-![github](rpjsazon-portfolio/screenshoots/github.JPG)
+![github](screenshoots/github.JPG)
 
 ## Responsive Design
 
@@ -32,14 +32,14 @@
 
 ### For Desktop:
 
-![desktop](../rpjsazon-portfolio/screenshoots/desktop-layout.JPG)
+![desktop](screenshoots/desktop-layout.JPG)
 
 ### For Tablet:
 
-![tablet](../rpjsazon-portfolio/screenshoots/ipad-layout.JPG)
+![tablet](screenshoots/ipad-layout.JPG)
 
 ### For Tablet:
 
-![mobile](../rpjsazon-portfolio/screenshoots/mobile-iphone12.JPG)
+![mobile](screenshoots/mobile-iphone12.JPG)
 
 
