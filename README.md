@@ -13,7 +13,7 @@
 ## Color Palette
 ### I've use [coolors.co](https://coolors.co/) to generate my color palette.
 
-![color-pallete](/rpjsazon-portfolio/screenshoots/my-color-pallete-2.JPG)
+![color-pallete](rpjsazon-portfolio/screenshoots/my-color-pallete-2.JPG)
 
 ## Wireframe
 ### I've used [PenPot App](https://penpot.app/) to visualized my website.
