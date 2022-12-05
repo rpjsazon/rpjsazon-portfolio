@@ -53,7 +53,6 @@ header h1 span {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   padding: 8px 35px 8px 35px;
-  
 }
 
 header nav {
@@ -366,6 +365,11 @@ footer p {
 }
 /* nav media @ width 830px below*/
 @media only screen and (max-width: 830px) {
+  .header-text {
+    padding: 100% 10% 20px 10%;
+    font-size: 16px;
+  }
+  
   header nav ul li {
     margin-right: 20px;
   }
